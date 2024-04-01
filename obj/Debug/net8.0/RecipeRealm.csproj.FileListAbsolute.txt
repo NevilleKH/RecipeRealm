@@ -1,0 +1,15 @@
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.AssemblyInfoInputs.cache
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.AssemblyInfo.cs
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.csproj.CoreCompileInputs.cache
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.sourcelink.json
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\bin\Debug\net8.0\RecipeRealm.exe
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\bin\Debug\net8.0\RecipeRealm.deps.json
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\bin\Debug\net8.0\RecipeRealm.runtimeconfig.json
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\bin\Debug\net8.0\RecipeRealm.dll
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\bin\Debug\net8.0\RecipeRealm.pdb
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.dll
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\refint\RecipeRealm.dll
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.pdb
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\RecipeRealm.genruntimeconfig.cache
+C:\Users\Neville\Documents\Projects\RecipeRealm\RecipeRealm\obj\Debug\net8.0\ref\RecipeRealm.dll

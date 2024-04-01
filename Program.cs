@@ -20,7 +20,10 @@
 
                 if (option == "1")
                 {
-                    Console.WriteLine("You Entered Number 1!!!!");
+                    
+                    RecipeInfor recipe = new RecipeInfor();
+                    RecipeInfor.RecipeInfo();
+
                 }
                 else if (option == "2")
                 {
