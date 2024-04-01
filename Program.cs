@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("Welcome to RecipeRealm!");
+                Console.WriteLine("\nWelcome to RecipeRealm!");
                 Console.WriteLine("**************************\n");
                 Console.WriteLine("Please Choose An Option Below\n");
                 Console.WriteLine("1. Enter Recipe");
