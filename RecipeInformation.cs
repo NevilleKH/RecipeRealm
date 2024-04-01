@@ -4,7 +4,7 @@
     class RecipeInfor
     {
         static int numIngredient; // Number Ingredients 
-        static int numsteps; // Numbers of Steps
+        static int numSteps; // Numbers of Steps
         static string recipeName; // Name of Recipe
         static string[] ingredName; // Ingredient Name
         static string[] indregMeasurement; // Measurement of Ingredients 
@@ -16,7 +16,7 @@
         {
             // Initialize arrays
             numIngredient = 0;
-            numsteps = 0;
+            numSteps = 0;
             recipeName = "";
             ingredName = new string[0]; // Initialize as empty arrays
             indregMeasurement = new string[0];
@@ -37,7 +37,7 @@
             Console.WriteLine("Enter Number Of Ingridents");
             numIngredient = int.Parse(Console.ReadLine());
 
-            ingredName = new string[numIngredient]; 
+            ingredName = new string[numIngredient];
             measurementAmount = new double[numIngredient];
             indregMeasurement = new string[numIngredient];
 
@@ -54,6 +54,21 @@
 
             }
 
+            Console.WriteLine("********************************************************************\n");
+            Console.WriteLine("Enter Number Of Steps To Make a " + recipeName);
+            numSteps = int.Parse(Console.ReadLine());
+
+            stepsInstruction = new string[numSteps];
+
+            for (int i = 0; i < numSteps; i++)
+            {
+                Console.WriteLine("\nEnter Step Number " + (i + 1) + ":");
+                stepsInstruction[i] = Console.ReadLine();
+
+            }
+
+            Console.WriteLine("\nThank you! The Recipe, Measurements, and Steps has been captured!");
+            Console.WriteLine("********************************************************************\n");
 
         }
 
