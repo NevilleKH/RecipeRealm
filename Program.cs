@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+
             while (true)
             {
                 Console.WriteLine("\nWelcome to RecipeRealm!");
@@ -20,14 +21,11 @@
 
                 if (option == "1")
                 {
-                    
-                    RecipeInfor recipe = new RecipeInfor();
                     RecipeInfor.RecipeInfo();
-
                 }
                 else if (option == "2")
                 {
-                    Console.WriteLine("You Entered no.2");
+                    RecipeInfor.DisplayRecipe();
                 }
                 else if (option == "3")
                 {

@@ -23,7 +23,7 @@
             stepsInstruction = new string[0];
             measurementAmount = new double[0];
 
-        }
+        } // End of RecipeInfor contructor
 
         public static void RecipeInfo()
         {
@@ -70,9 +70,44 @@
             Console.WriteLine("\nThank you! The Recipe, Measurements, and Steps has been captured!");
             Console.WriteLine("********************************************************************\n");
 
+        } // End of RecipeInfo Method
+
+        public static void DisplayRecipe()
+        {
+
+            // Check if there is a recipe sotred
+            if (string.IsNullOrEmpty(recipeName) || numIngredient == 0 || numSteps == 0)
+            {
+                Console.WriteLine("\nThere is no recipe to display here. Please Add A Recipe\n");
+                return;
+            }
+
+            Console.WriteLine("\nRecipe Name: " + recipeName);
+            Console.WriteLine("\nAll Inredients: ");
+            Console.WriteLine("=====================================\n");
+
+            for (int i = 0; i < numIngredient; i++)
+            {
+
+                Console.WriteLine(measurementAmount[i] + " " + indregMeasurement[i] + " of " + ingredName[i]);
+
+            }
+
+            Console.WriteLine("\nSteps to make a " + recipeName + ": ");
+            Console.WriteLine("=====================================\n");
+
+            for (int i = 0; i < numSteps; i++)
+            {
+
+                Console.WriteLine((i + 1) + ". " + stepsInstruction[i]);
+            
+            }
+
+            Console.WriteLine("=====================================\n");
+
         }
 
 
-    }
+    }// End of Recipe Class
 
 }
