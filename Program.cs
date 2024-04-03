@@ -29,7 +29,7 @@
                 }
                 else if (option == "3")
                 {
-                    Console.WriteLine("You entered no.3");
+                    RecipeInfor.ScalePortion();
                 }
                 else if (option == "4")
                 {

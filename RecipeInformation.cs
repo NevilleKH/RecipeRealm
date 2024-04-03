@@ -100,12 +100,78 @@
             {
 
                 Console.WriteLine((i + 1) + ". " + stepsInstruction[i]);
-            
+
             }
 
             Console.WriteLine("=====================================\n");
 
-        }
+        } // Endd of DisplayRecipe Method
+
+
+        //Scale Recipe Portion
+        public static void ScalePortion()
+        {
+            // Check if there are ingredients to scale
+            if (numIngredient == 0)
+            {
+                Console.WriteLine("\nThere's no recipe to scale here. Please Add Recipe\n");
+                return; // Exit the method
+            }
+
+            Console.WriteLine("\nSelect An Option Below To Scale The Recipe");
+            Console.WriteLine("=====================================\n");
+            Console.WriteLine("1: Half(0.5)");
+            Console.WriteLine("2: Double");
+            Console.WriteLine("3: Triple");
+
+            string userInput = Console.ReadLine(); // User input
+
+
+            if (userInput == "1")
+            {
+                for (int i = 0; i < numIngredient; i++)
+                {
+
+                    measurementAmount[i] *= 0.5;
+                }
+
+            }
+            else if (userInput == "2")
+            {
+                for (int i = 0; i < numIngredient; i++)
+                {
+
+                    measurementAmount[i] *= 2;
+                }
+
+            }
+            else if (userInput == "3")
+            {
+                for (int i = 0; i < numIngredient; i++)
+                {
+
+                    measurementAmount[i] *= 3;
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Please Slect An Option From 1-3\n");
+
+            }
+
+            Console.WriteLine("\nYour Recipe Has Been Scaled!");
+            Console.WriteLine("\nAll Inredients: ");
+
+            for (int i = 0; i < numIngredient; i++)
+            {
+                Console.WriteLine(measurementAmount[i] + " " + indregMeasurement[i] + " of " + ingredName[i]);
+
+            }
+
+            Console.WriteLine("=====================================\n");
+
+        } // End of Scale Recipe Portion Method
 
 
     }// End of Recipe Class
