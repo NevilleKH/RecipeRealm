@@ -10,6 +10,7 @@
         static string[] indregMeasurement; // Measurement of Ingredients 
         static string[] stepsInstruction; // Clear Instrcutions of Steps
         static double[] measurementAmount; // The Amount of Measurement 
+        static double[] originalAmount; // Array to store original values
 
 
         public RecipeInfor()
@@ -22,6 +23,7 @@
             indregMeasurement = new string[0];
             stepsInstruction = new string[0];
             measurementAmount = new double[0];
+            originalAmount = new double[0];
 
         } // End of RecipeInfor contructor
 
@@ -41,6 +43,7 @@
             measurementAmount = new double[numIngredient];
             indregMeasurement = new string[numIngredient];
 
+
             for (int i = 0; i < numIngredient; i++)
             {
                 Console.WriteLine("\nEnter Ingrident Name " + (i + 1) + ":");
@@ -51,8 +54,10 @@
 
                 Console.WriteLine("\nEnter the Unit Of Measurement For " + ingredName[i] + ":" + "(Tablespoons, Cup, Slice, etc... )");
                 indregMeasurement[i] = Console.ReadLine();
-
             }
+
+            originalAmount = new double[numIngredient];
+            Array.Copy(measurementAmount, originalAmount, numIngredient);
 
             Console.WriteLine("********************************************************************\n");
             Console.WriteLine("Enter Number Of Steps To Make a " + recipeName);
@@ -124,32 +129,33 @@
             Console.WriteLine("2: Double");
             Console.WriteLine("3: Triple");
 
-            string userInput = Console.ReadLine(); // User input
+
+            string option = Console.ReadLine();
 
 
-            if (userInput == "1")
+            if (option == "1")
             {
                 for (int i = 0; i < numIngredient; i++)
                 {
-
+                    originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 0.5;
                 }
 
             }
-            else if (userInput == "2")
+            else if (option == "2")
             {
                 for (int i = 0; i < numIngredient; i++)
                 {
-
+                    originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 2;
                 }
 
             }
-            else if (userInput == "3")
+            else if (option == "3")
             {
                 for (int i = 0; i < numIngredient; i++)
                 {
-
+                    originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 3;
                 }
 
@@ -172,6 +178,26 @@
             Console.WriteLine("=====================================\n");
 
         } // End of Scale Recipe Portion Method
+
+        //Reset to the original quantities.
+        public static void ResetQuantities()
+        {
+            // Check if there are ingredients to reset
+            if (numIngredient == 0)
+            {
+                Console.WriteLine("\nThere's no recipe to reset here. Please Add Recipe\n");
+                return; // Exit the method
+            }
+
+            for (int i = 0; i < numIngredient; i++)
+            {
+                                       
+                measurementAmount[i] = originalAmount[i];
+            }
+
+            Console.WriteLine("\nRecipe Has Been Reset To Its Original Scale.\n");
+
+        }//End Reset to the original quantities method 
 
 
     }// End of Recipe Class

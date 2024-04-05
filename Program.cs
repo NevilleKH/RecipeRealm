@@ -33,7 +33,7 @@
                 }
                 else if (option == "4")
                 {
-                    Console.WriteLine("You entered no.4");
+                    RecipeInfor.ResetQuantities();
                 }
                 else if (option == "5")
                 {
