@@ -129,9 +129,7 @@
             Console.WriteLine("2: Double");
             Console.WriteLine("3: Triple");
 
-
             string option = Console.ReadLine();
-
 
             if (option == "1")
             {
@@ -140,7 +138,6 @@
                     originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 0.5;
                 }
-
             }
             else if (option == "2")
             {
@@ -149,7 +146,6 @@
                     originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 2;
                 }
-
             }
             else if (option == "3")
             {
@@ -158,7 +154,6 @@
                     originalAmount[i] = measurementAmount[i];
                     measurementAmount[i] *= 3;
                 }
-
             }
             else
             {
@@ -191,7 +186,7 @@
 
             for (int i = 0; i < numIngredient; i++)
             {
-                                       
+
                 measurementAmount[i] = originalAmount[i];
             }
 
@@ -199,7 +194,29 @@
 
         }//End Reset to the original quantities method 
 
+        // Clear Recipe Data
+        public static void ClearRecipeData()
+        {
+
+            // Check if there's any recipe data to clear
+            if (numIngredient == 0 && numSteps == 0 && string.IsNullOrEmpty(recipeName) && ingredName == null && indregMeasurement == null && stepsInstruction == null && measurementAmount == null && originalAmount == null)
+            {
+                Console.WriteLine("\nThere's no recipe data to clear. Please Add Recipe\n");
+                return; // Exit the method
+            }
+
+            numIngredient = 0;
+            numSteps = 0;
+            recipeName = "";
+            ingredName = null;
+            indregMeasurement = null;
+            stepsInstruction = null;
+            measurementAmount = null;
+            originalAmount = null;
+
+            Console.WriteLine("\nAll Recipe details has been cleared!");
+            Console.WriteLine("=====================================\n");
+        }// End Of Clear Recipe Data Method
 
     }// End of Recipe Class
-
 }

@@ -37,20 +37,28 @@
                 }
                 else if (option == "5")
                 {
-                    Console.WriteLine("You entered no.5");
+                    RecipeInfor.ClearRecipeData();
                 }
                 else if (option == "6")
                 {
-                    Console.WriteLine("You entered no.6");
+                   CloseProgram();
                 }
                 else
                 {
-                   Console.WriteLine("Please enter a correct option");
+                    Console.WriteLine("Please enter a correct option");
                 }
 
             }// End of While Loop
 
         }// End of Main method
+
+        // Close Program
+        static void CloseProgram()
+        {
+
+            Environment.Exit(0);
+
+        } // End of close program method
 
     }// End of internal class
 
